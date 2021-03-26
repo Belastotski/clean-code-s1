@@ -53,13 +53,6 @@ button{
     margin: 0 auto 0;
 }
 
-.task__name {
-    width: 56%;
-    display: inline-block;
-}
-
-
-
 button {
     background: none;
     border: 0px;
@@ -75,7 +68,7 @@ button:hover {
 }
 
 /* Heading */
-h3  {
+.controller__caption  {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -86,7 +79,8 @@ h3  {
     margin: 0 0 20px;
 }
 
-input[type="text"] {
+.controller__input,
+.task__input  {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -99,15 +93,10 @@ input[type="text"] {
     color: #888;
 }
 
-input[type="text"]:focus {
+.controller__input:focus,
+.task__input:focus {
     color: #333;
 }
-
-/* New Task */
-/*label[for="new-task"] {*/
-/*    display: block;*/
-/*    margin: 0 0 20px;*/
-/*}*/
 
 .controller__input {
     width: 318px;
@@ -118,61 +107,63 @@ input[type="text"]:focus {
 }
 
 /* Task list */
-li {
+.task {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
 }
 
-li > * {
+.task > * {
     vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.task__check {
     margin: 0 10px;
 }
 
-li > label {
+.task__name {
+    width: 56%;
+    display: inline-block;
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
 
-li >    input[type="text"] {
+.task__input {
     width: 226px;
 }
 
-li > button.delete:hover {
+.task__button-delete:hover {
     color: #CF2323;
 }
 
-button.delete img {
+.task__img-delete {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+.task__img-delete:hover {
     transform: rotateZ(0);
 }
 
 /* Completed */
-ul#completed-tasks label {
+.controller__tasks-list_complete .task__name {
     text-decoration: line-through;
     color: #888;
 }
 
 /* Edit Task */
-ul li input[type="text"] {
+.task__input {
     display: none;
 }
 
-ul li.edit-mode input[type="text"] {
+.task_edit-mode .task__input {
     display: inline-block;
     width: 224px;
 }
 
-ul li.edit-mode label {
+.task_edit-mode .task__name {
     display: none;
 }
