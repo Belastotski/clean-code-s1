@@ -3,6 +3,21 @@
     box-sizing: border-box;
 }
 
+ul {
+    margin: 0;
+    padding: 0px;
+}
+
+li,
+h3 {
+    list-style: none;
+}
+
+input,
+button{
+    outline: none;
+}
+
 .wrapper {
     background-color: #f8f8f8;
     color: #333;
@@ -43,20 +58,7 @@
     display: inline-block;
 }
 
-ul {
-    margin: 0;
-    padding: 0px;
-}
 
-li,
-h3 {
-    list-style: none;
-}
-
-input,
-button{
-    outline: none;
-}
 
 button {
     background: none;
@@ -107,11 +109,11 @@ input[type="text"]:focus {
 /*    margin: 0 0 20px;*/
 /*}*/
 
-input#new-task {
+.controller__input {
     width: 318px;
 }
 
-p > button:hover {
+.controller__add-button:hover {
     color: #0fc57c;
 }
 
