@@ -11,44 +11,47 @@
     <a class="about__info" href="https://goal-life.com/page/method/matrix-eisenhower" >Want more details?</a>
 </header>
 <div class="wrapper-controller">
-    <section class="controller" id="add-to-list">
+    <section class="controller">
         <h3 class="controller__caption">Add Item</h3>
         <input class="controller__input" id="new-task" type="text">
         <button class="controller__add-button">Add</button>
     </section>
     <section class="controller">
-    <h3 class="controller__caption">Todo</h3>
-    <ul class="controller__tasks-list controller__tasks-list_incomplete" id="incomplete-tasks">
-        <li class="task">
-            <input class="task__check" type="checkbox">
-            <label class="task__name">Pay Bills</label>
-            <input class="task__input" type="text">
-            <button class="task__button-edit">Edit</button>
-            <button class="task__button-delete">Delete<img class="task__img-delete" src="./remove.svg" alt="">
-            </button>
-        </li>
-        <li class="task task_edit-mode edit-mode">
-            <input class="task__check" type="checkbox">
-            <label class="task__name">Go Shopping</label>
-            <input class="task__input" type="text" value="Go Shopping">
-            <button class="task__button-edit">Save</button>
-            <button class="task__button-delete">Delete<img class="task__img-delete" src="./remove.svg" alt="">
-            </button>
-        </li>
-    </ul>
+        <h3 class="controller__caption">Todo</h3>
+        <ul class="controller__tasks-list controller__tasks-list_incomplete">
+            <li class="task">
+                <input class="task__check" type="checkbox">
+                <label class="task__name">Pay Bills</label>
+                <input class="task__input" type="text">
+                <button class="task__button-edit">Edit</button>
+                <button class="task__button-delete">
+                    <img class="task__img-delete" src="./remove.svg" alt="">
+                </button>
+            </li>
+            <li class="task task_edit-mode edit-mode">
+                <input class="task__check" type="checkbox">
+                <label class="task__name">Go Shopping</label>
+                <input class="task__input" type="text" value="Go Shopping">
+                <button class="task__button-edit">Save</button>
+                <button class="task__button-delete">
+                    <img class="task__img-delete" src="./remove.svg" alt="">
+                </button>
+            </li>
+        </ul>
     </section>
     <section class="controller">
         <h3 class="controller__caption">Completed</h3>
-    <ul class="controller__tasks-list controller__tasks-list_complete" id="completed-tasks">
-        <li class="task">
-            <input class="task__check" type="checkbox" checked>
-            <label class="task__name">See the Doctor</label>
-            <input class="task__input" type="text">
-            <button class="task__button-edit">Edit</button>
-            <button class="task__button-delete">Delete<img class="task__img-delete" src="./remove.svg" alt="">
-            </button>
-        </li>
-    </ul>
+        <ul class="controller__tasks-list controller__tasks-list_complete">
+            <li class="task">
+                <input class="task__check" type="checkbox" checked>
+                <label class="task__name">See the Doctor</label>
+                <input class="task__input" type="text">
+                <button class="task__button-edit">Edit</button>
+                <button class="task__button-delete">
+                    <img class="task__img-delete" src="./remove.svg" alt="">
+                </button>
+            </li>
+        </ul>
     </section>
 </div>
 <script src="app.js"></script>
