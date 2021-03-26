@@ -13,6 +13,11 @@ h3 {
     list-style: none;
 }
 
+h3 {
+    margin-block: 0;
+    margin-inline: 0;
+}
+
 input,
 button{
     outline: none;
