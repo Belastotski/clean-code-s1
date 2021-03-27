@@ -54,7 +54,7 @@ button{
 
 .wrapper-controller {
     display: block;
-    width: 400px;
+    width: 500px;
     margin: 0 auto 0;
 }
 
@@ -73,6 +73,10 @@ button:hover {
 }
 
 /* Heading */
+.controller__flex-container{
+    display: flex;
+}
+
 .controller__caption  {
     color: #333;
     font-weight: 700;
@@ -96,6 +100,7 @@ button:hover {
     border-radius: 6px;
     font-family: Lato, sans-serif;
     color: #888;
+    flex-grow: 1;
 }
 
 .controller__input:focus,
@@ -116,6 +121,10 @@ button:hover {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .task > * {
@@ -132,7 +141,7 @@ button:hover {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
-    /*width: 226px;*/
+    flex-grow: 1;
 }
 
 .task__input {
