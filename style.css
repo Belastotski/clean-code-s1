@@ -1,7 +1,4 @@
 /* Basic Style */
-* {
-    box-sizing: border-box;
-}
 
 ul {
     margin: 0;
@@ -58,7 +55,7 @@ button{
     margin: 0 auto 0;
 }
 
-button {
+.wrapper-controller_button {
     background: none;
     border: 0;
     color: #888;
@@ -68,7 +65,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.wrapper-controller_button:hover {
     color: #3a3a3a;
 }
 
